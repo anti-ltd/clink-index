@@ -1,0 +1,27 @@
+[submodule "clink-actions"]
+	path = clink-actions
+	url = git@github.com:anti-ltd/clink-actions.git
+[submodule "clink-fonts"]
+	path = clink-fonts
+	url = https://github.com/anti-ltd/clink-fonts.git
+[submodule "clink-language-packs"]
+	path = clink-language-packs
+	url = git@github.com:anti-ltd/clink-language-packs.git
+[submodule "clink-layouts"]
+	path = clink-layouts
+	url = git@github.com:anti-ltd/clink-layouts.git
+[submodule "clink-panels"]
+	path = clink-panels
+	url = git@github.com:anti-ltd/clink-panels.git
+[submodule "clink-profiles"]
+	path = clink-profiles
+	url = git@github.com:anti-ltd/clink-profiles.git
+[submodule "clink-sounds"]
+	path = clink-sounds
+	url = git@github.com:anti-ltd/clink-sounds.git
+[submodule "clink-themes"]
+	path = clink-themes
+	url = git@github.com:anti-ltd/clink-themes.git
+[submodule "clink-localizations"]
+	path = clink-localizations
+	url = git@github.com:anti-ltd/clink-localizations.git
