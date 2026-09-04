@@ -1,6 +1,6 @@
 # Clink status
 
 ```yaml
-version: "1.5 (186)"
-motd: "i love u"
+version: "1.4.6"
+motd: "New 3D Mechanical Style!"
 ```
