@@ -25,3 +25,6 @@
 [submodule "clink-localizations"]
 	path = clink-localizations
 	url = git@github.com:anti-ltd/clink-localizations.git
+[submodule "clink-themes-unofficial"]
+	path = clink-themes-unofficial
+	url = git@github.com:anti-ltd/clink-themes-unofficial.git
