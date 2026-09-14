@@ -10,7 +10,7 @@ Clink is an open iOS keyboard. The app ships with a curated set of themes, layou
 
 ## Official Clink repositories
 
-[Language packs](https://github.com/anti-ltd/clink-language-packs) · [Layouts](https://github.com/anti-ltd/clink-layouts) · [Profiles](https://github.com/anti-ltd/clink-profiles) · [Themes](https://github.com/anti-ltd/clink-themes) · [Panels](https://github.com/anti-ltd/clink-panels) · [Actions](https://github.com/anti-ltd/clink-actions) · [Fonts](https://github.com/anti-ltd/clink-fonts) · [Sounds](https://github.com/anti-ltd/clink-sounds)
+[Language packs](https://github.com/anti-ltd/clink-language-packs) · [Layouts](https://github.com/anti-ltd/clink-layouts) · [Profiles](https://github.com/anti-ltd/clink-profiles) · [Themes](https://github.com/anti-ltd/clink-themes) · [Affiliate themes](https://github.com/anti-ltd/clink-themes-affiliate) · [Panels](https://github.com/anti-ltd/clink-panels) · [Actions](https://github.com/anti-ltd/clink-actions) · [Fonts](https://github.com/anti-ltd/clink-fonts) · [Sounds](https://github.com/anti-ltd/clink-sounds)
 
 ## What is in each repository
 
@@ -45,6 +45,12 @@ Over 20 open keyboard themes across dark, light, and Liquid Glass styles. Themes
 The repository includes a manifest generator and validator. Publish by adding a `.clinktheme` file and pushing to main.
 
 Read more in [clink-themes](https://github.com/anti-ltd/clink-themes).
+
+### Affiliate themes
+
+Approved partner themes, included by default in Clink under **Affiliate**, immediately after **Official**. Downloads are free and read-only. The repository starts with an empty catalog while awaiting the first affiliate.
+
+Read more in [clink-themes-affiliate](https://github.com/anti-ltd/clink-themes-affiliate).
 
 ### Panels
 

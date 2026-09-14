@@ -28,3 +28,6 @@
 [submodule "clink-themes-unofficial"]
 	path = clink-themes-unofficial
 	url = git@github.com:anti-ltd/clink-themes-unofficial.git
+[submodule "clink-themes-affiliate"]
+	path = clink-themes-affiliate
+	url = git@github.com:anti-ltd/clink-themes-affiliate.git
