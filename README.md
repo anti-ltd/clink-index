@@ -11,10 +11,7 @@ Clink is an open iOS keyboard. The app ships with a curated set of themes, layou
 
 ## Automation notice
 
-This index is maintained largely by automation. Treat it as a generated hub, not a hand-edited monorepo:
-
-- The public [project board](https://github.com/orgs/anti-ltd/projects/4) and issues on this repo are filled from Discord (Ideas / Issues threads) by the Clink Wizard bot — `/report`, status commands, and `/append`.
-- The [wiki](https://github.com/anti-ltd/clink-index/wiki) mirrors English developer docs from [clinkkeys.app/docs](https://clinkkeys.app/docs). Wiki pages are overwritten on sync.
+This index is maintained largely by automation. Treat it as a generated hub, not a hand-edited monorepo.
 
 ## Official Clink repositories
 
