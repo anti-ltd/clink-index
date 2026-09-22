@@ -31,3 +31,9 @@
 [submodule "clink-themes-affiliate"]
 	path = clink-themes-affiliate
 	url = git@github.com:anti-ltd/clink-themes-affiliate.git
+[submodule "clink-themes-nuphy"]
+	path = clink-themes-nuphy
+	url = git@github.com:anti-ltd/clink-themes-nuphy.git
+[submodule "clink-plugins"]
+	path = clink-plugins
+	url = git@github.com:anti-ltd/clink-plugins.git
