@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anti-ltd/clink-language-packs/main/icon-1024.png" width="96" alt="Clink app icon">
+  <img src="README-assets/clink-icon.png" width="96" alt="Clink app icon">
 </p>
 
 <h1 align="center">Clink index</h1>
@@ -8,9 +8,17 @@
 
 Clink is an open iOS keyboard. The app ships with a curated set of themes, layouts, languages, and tools, but most of the content people actually use lives in separate repositories. This index collects all of them so you can browse, fork, or contribute from a single starting point.
 
+
+## Automation notice
+
+This index is maintained largely by automation. Treat it as a generated hub, not a hand-edited monorepo:
+
+- The public [project board](https://github.com/orgs/anti-ltd/projects/4) and issues on this repo are filled from Discord (Ideas / Issues threads) by the Clink Wizard bot — `/report`, status commands, and `/append`.
+- The [wiki](https://github.com/anti-ltd/clink-index/wiki) mirrors English developer docs from [clinkkeys.app/docs](https://clinkkeys.app/docs). Wiki pages are overwritten on sync.
+
 ## Official Clink repositories
 
-[Language packs](https://github.com/anti-ltd/clink-language-packs) · [Layouts](https://github.com/anti-ltd/clink-layouts) · [Profiles](https://github.com/anti-ltd/clink-profiles) · [Themes](https://github.com/anti-ltd/clink-themes) · [Affiliate themes](https://github.com/anti-ltd/clink-themes-affiliate) · [Panels](https://github.com/anti-ltd/clink-panels) · [Actions](https://github.com/anti-ltd/clink-actions) · [Fonts](https://github.com/anti-ltd/clink-fonts) · [Sounds](https://github.com/anti-ltd/clink-sounds)
+[Language packs](https://github.com/anti-ltd/clink-language-packs) · [Layouts](https://github.com/anti-ltd/clink-layouts) · [Profiles](https://github.com/anti-ltd/clink-profiles) · [Themes](https://github.com/anti-ltd/clink-themes) · [Affiliate themes](https://github.com/anti-ltd/clink-themes-affiliate) · [NuPhy Inspired themes](https://github.com/anti-ltd/clink-themes-nuphy) · [Panels](https://github.com/anti-ltd/clink-panels) · [Actions](https://github.com/anti-ltd/clink-actions) · [Plugins](https://github.com/anti-ltd/clink-plugins) · [Fonts](https://github.com/anti-ltd/clink-fonts) · [Sounds](https://github.com/anti-ltd/clink-sounds)
 
 ## What is in each repository
 
@@ -52,6 +60,12 @@ Approved partner themes, included by default in Clink under **Affiliate**, immed
 
 Read more in [clink-themes-affiliate](https://github.com/anti-ltd/clink-themes-affiliate).
 
+### NuPhy Inspired themes
+
+17 themes inspired by NuPhy keyboards, available in their own built-in catalog. The info button compares the physical keyboard with its Clink theme and links to [NuPhy](https://nuphy.com/). Comparison images are hosted in repository releases and load on demand.
+
+Read more in [clink-themes-nuphy](https://github.com/anti-ltd/clink-themes-nuphy).
+
 ### Panels
 
 Custom keyboard panels that replace the keyboard with a focused tool. The official repository includes Kaomoji (expressive text faces), Snippets (frequently used text), and Fonts (decorative Unicode styles).
@@ -68,6 +82,14 @@ Actions contain executable-style logic, so Clink asks for explicit permission be
 
 Read more in [clink-actions](https://github.com/anti-ltd/clink-actions).
 
+### Plugins
+
+Scripts that run alongside the keyboard rather than inside a panel. A plugin hooks into typing (`on_open`, `on_key`, `on_word`) and can drive the keyboard's own controls, such as putting a live typing speed on the space bar. It draws its settings with the panel builders and can place them on a native settings screen. The official repository includes WPM Spacebar, Language Badge, Language Flag and Language Emoji. The language plugins show text, bundled MIT-licensed flag artwork or a flag emoji in any space bar corner while leaving the caption free.
+
+Plugins need a Clink Pro membership to run, and like actions and panels they download only after an explicit trust decision for the repository.
+
+Read more in [clink-plugins](https://github.com/anti-ltd/clink-plugins).
+
 ### Fonts
 
 Redistributable font packs that Clink can install and use in custom themes. Font binaries stay separate from themes, so a theme stores only the verified PostScript name of the selected face.
@@ -78,7 +100,7 @@ Read more in [clink-fonts](https://github.com/anti-ltd/clink-fonts).
 
 ### Sounds
 
-Key-sound packs for Clink: short, conditioned click samples in `.clinkpack` format. The official repository includes Clicky Blue, Tactile Brown, Typewriter, and Marble. Each pack contains metadata and mono 44.1 kHz WAV samples. Packs cannot run code.
+Key-sound packs for Clink: short, conditioned click samples in `.clinkpack` format. The official repository has 17 packs. Four are the originals (Clicky Blue, Tactile Brown, Typewriter, and Marble) and thirteen are rendered from editable synthesis recipes, covering wood, ceramic, metal, stone, paper, and Shot, a joke pack that fires a blast and racks the pump on every key. Each pack contains metadata and mono 44.1 kHz WAV samples. Packs cannot run code.
 
 You can record or import sounds in Clink, export a pack, and publish it through this repository. The included tools handle conditioning, manifest generation, and validation.
 
@@ -88,7 +110,7 @@ Read more in [clink-sounds](https://github.com/anti-ltd/clink-sounds).
 
 A typical Clink setup uses several repositories at once: a language pack for prediction, a theme for the look, a layout for key positions, and maybe a sound pack for feedback. Each repository is independent; you can mix and match anything from any source.
 
-Clink verifies every download: public HTTPS GitHub releases only, SHA-256 hash matching, size limits, and file-type checks. Data-only packs cannot run code. Packs that contain logic (actions, panels) require a separate, explicit trust decision before Clink downloads them.
+Clink verifies every download: public HTTPS GitHub releases only, SHA-256 hash matching, size limits, and file-type checks. Data-only packs cannot run code. Packs that contain logic (actions, panels, plugins) require a separate, explicit trust decision before Clink downloads them.
 
 ## Adding your own repository
 
