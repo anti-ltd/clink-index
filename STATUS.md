@@ -1,6 +1,6 @@
 # Clink status
 
 ```yaml
-version: "1.6.1"
-motd: "NuPhy inspired themes now available!"
+version: "1.7.1"
+motd: "Use code 'MIACLINK' for 75% off lifetime!"
 ```
