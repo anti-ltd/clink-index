@@ -37,3 +37,6 @@
 [submodule "clink-plugins"]
 	path = clink-plugins
 	url = git@github.com:anti-ltd/clink-plugins.git
+[submodule "clink-themes-beams"]
+	path = clink-themes-beams
+	url = git@github.com:anti-ltd/clink-themes-beams.git
