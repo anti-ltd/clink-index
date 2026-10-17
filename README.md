@@ -8,6 +8,12 @@
 
 Clink is an open iOS keyboard. The app ships with a curated set of themes, layouts, languages, and tools, but most of the content people actually use lives in separate repositories. This index collects all of them so you can browse, fork, or contribute from a single starting point.
 
+## Documentation and feedback
+
+Read the [Clink usage guides](https://anti.ltd/docs/clink) on ANTI. Public documentation is maintained there; the GitHub wiki sync is retired.
+
+Report bugs and request features through Clink's in-app **Feedback** page. Reports stay private until a moderator publishes them. Follow published feedback and release updates on the [ANTI feedback board](https://www.anti.ltd/feedback?appId=clink&platform=ios).
+
 
 ## Automation notice
 
@@ -15,7 +21,7 @@ This index is maintained largely by automation. Treat it as a generated hub, not
 
 ## Official Clink repositories
 
-[Language packs](https://github.com/anti-ltd/clink-language-packs) · [Layouts](https://github.com/anti-ltd/clink-layouts) · [Profiles](https://github.com/anti-ltd/clink-profiles) · [Themes](https://github.com/anti-ltd/clink-themes) · [Affiliate themes](https://github.com/anti-ltd/clink-themes-affiliate) · [NuPhy Inspired themes](https://github.com/anti-ltd/clink-themes-nuphy) · [Panels](https://github.com/anti-ltd/clink-panels) · [Actions](https://github.com/anti-ltd/clink-actions) · [Plugins](https://github.com/anti-ltd/clink-plugins) · [Fonts](https://github.com/anti-ltd/clink-fonts) · [Sounds](https://github.com/anti-ltd/clink-sounds)
+[Language packs](https://github.com/anti-ltd/clink-language-packs) · [Layouts](https://github.com/anti-ltd/clink-layouts) · [Profiles](https://github.com/anti-ltd/clink-profiles) · [Themes](https://github.com/anti-ltd/clink-themes) · [Affiliate themes](https://github.com/anti-ltd/clink-themes-affiliate) · [NuPhy Inspired themes](https://github.com/anti-ltd/clink-themes-nuphy) · [Beams themes](https://github.com/anti-ltd/clink-themes-beams) · [Panels](https://github.com/anti-ltd/clink-panels) · [Actions](https://github.com/anti-ltd/clink-actions) · [Plugins](https://github.com/anti-ltd/clink-plugins) · [Fonts](https://github.com/anti-ltd/clink-fonts) · [Sounds](https://github.com/anti-ltd/clink-sounds)
 
 ## What is in each repository
 
@@ -62,6 +68,14 @@ Read more in [clink-themes-affiliate](https://github.com/anti-ltd/clink-themes-a
 17 themes inspired by NuPhy keyboards, available in their own built-in catalog. The info button compares the physical keyboard with its Clink theme and links to [NuPhy](https://nuphy.com/). Comparison images are hosted in repository releases and load on demand.
 
 Read more in [clink-themes-nuphy](https://github.com/anti-ltd/clink-themes-nuphy).
+
+### Beams themes
+
+22 free keyboard themes, each with paired light and dark appearances. Shallow 3D Retro keycaps with the Soft finish, fine Grain surfaces, and coordinated colourways are available under **Beams**, a default linked, non-removable theme repository on iOS and Android. Themes download from the repository's GitHub release and remain available offline after installation.
+
+The repository contains editable palettes, paired `.clinktheme` files, native preview images, and manifest generation checks. GitHub Actions publishes the downloads after validation; the first release must exist before Clink can install themes.
+
+Read more in [clink-themes-beams](https://github.com/anti-ltd/clink-themes-beams).
 
 ### Panels
 
@@ -111,14 +125,14 @@ Clink verifies every download: public HTTPS GitHub releases only, SHA-256 hash m
 
 ## Adding your own repository
 
-Every repository above includes instructions for forking it and publishing your own content. The general pattern is:
+Each repository includes instructions for editing its content. For repositories that supply downloadable packs, the general publishing pattern is:
 
 1. Fork the repository you want to contribute to.
 2. Add your files following the repository's format.
 3. Run the included validation tools.
 4. Push to `main`. GitHub Actions builds the manifest and publishes the release.
 
-In Clink, open **General → Repositories** and add `owner/repository`. Your content appears under its own source chip and stays separate from the official packs.
+For a repository with a published pack manifest, open **General → Repositories** in Clink and add `owner/repository`. Your content appears under its own source chip and stays separate from the official packs.
 
 ## Make content with an AI agent
 
@@ -135,3 +149,9 @@ Review the resulting file and test it in Clink before pushing. The prompts keep 
 ## Licensing
 
 Each repository carries its own licence. Content you publish should be yours to share. Attribution and licence information belong in the individual repository's README or pack description.
+
+## Platform availability
+
+Every content repository has a `platforms.json` policy. `default` applies to all its packs; `overrides` selects individual IDs. The accepted targets are `ios`, `android`, and `both`. All current content defaults to `both`; only `clink-themes-affiliate` overrides Quiche Industries day and night to `ios`. Release builders write this as each manifest entry’s `platform` field. An older entry without the field remains available on both platforms.
+
+Keep the app’s bundled restrictions and standalone builders synchronized with `python3 Tools/sync_repository_platforms.py` in the Clink app checkout, then run the same command with `--check`. The bundled restriction also covers older cached Quiche manifests on Android. Regenerate the affiliate debug previews with `python3 Tools/EmbedAffiliateThemes.py` after changing their policy.
