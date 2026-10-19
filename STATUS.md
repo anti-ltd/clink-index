@@ -1,8 +1,8 @@
 # Clink status
 
 ```yaml
-version: "1.8.2"
-motd: "Added community upvoting!"
-android_version: ""
-android_motd: ""
+version: "1.9"
+motd: "New Typing Engine!"
+android_version: "1.0.2"
+android_motd: "Launch Day Baby!"
 ```
