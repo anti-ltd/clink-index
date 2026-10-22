@@ -21,7 +21,7 @@ This index is maintained largely by automation. Treat it as a generated hub, not
 
 ## Official Clink repositories
 
-[Language packs](https://github.com/anti-ltd/clink-language-packs) · [Layouts](https://github.com/anti-ltd/clink-layouts) · [Profiles](https://github.com/anti-ltd/clink-profiles) · [Themes](https://github.com/anti-ltd/clink-themes) · [Affiliate themes](https://github.com/anti-ltd/clink-themes-affiliate) · [NuPhy Inspired themes](https://github.com/anti-ltd/clink-themes-nuphy) · [Beams themes](https://github.com/anti-ltd/clink-themes-beams) · [Panels](https://github.com/anti-ltd/clink-panels) · [Actions](https://github.com/anti-ltd/clink-actions) · [Plugins](https://github.com/anti-ltd/clink-plugins) · [Fonts](https://github.com/anti-ltd/clink-fonts) · [Sounds](https://github.com/anti-ltd/clink-sounds)
+[Language packs](https://github.com/anti-ltd/clink-language-packs) · [Layouts](https://github.com/anti-ltd/clink-layouts) · [Profiles](https://github.com/anti-ltd/clink-profiles) · [Themes](https://github.com/anti-ltd/clink-themes) · [Affiliate themes](https://github.com/anti-ltd/clink-themes-affiliate) · [NuPhy Inspired themes](https://github.com/anti-ltd/clink-themes-nuphy) · [Beams themes](https://github.com/anti-ltd/clink-themes-beams) · [Events themes](https://github.com/anti-ltd/clink-themes-events) · [Panels](https://github.com/anti-ltd/clink-panels) · [Actions](https://github.com/anti-ltd/clink-actions) · [Plugins](https://github.com/anti-ltd/clink-plugins) · [Fonts](https://github.com/anti-ltd/clink-fonts) · [Sounds](https://github.com/anti-ltd/clink-sounds)
 
 ## What is in each repository
 
@@ -76,6 +76,14 @@ Read more in [clink-themes-nuphy](https://github.com/anti-ltd/clink-themes-nuphy
 The repository contains editable palettes, paired `.clinktheme` files, native preview images, and manifest generation checks. GitHub Actions publishes the downloads after validation; the first release must exist before Clink can install themes.
 
 Read more in [clink-themes-beams](https://github.com/anti-ltd/clink-themes-beams).
+
+### Events themes
+
+Free seasonal theme collections, starting with six Halloween themes, each with paired light and dark appearances. Events is a default linked, non-removable repository on iOS and Android. The themes are permanent additions, separate from limited-edition in-app gifts.
+
+The repository contains editable palettes, native previews, paired `.clinktheme` files, manifest validation and the same immutable release workflow as Beams.
+
+Read more in [clink-themes-events](https://github.com/anti-ltd/clink-themes-events).
 
 ### Panels
 

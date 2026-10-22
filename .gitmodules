@@ -40,3 +40,6 @@
 [submodule "clink-themes-beams"]
 	path = clink-themes-beams
 	url = git@github.com:anti-ltd/clink-themes-beams.git
+[submodule "clink-themes-events"]
+	path = clink-themes-events
+	url = https://github.com/anti-ltd/clink-themes-events.git
